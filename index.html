@@ -380,7 +380,6 @@
         
         .service-heading {
             margin: 15px 0;
-            http: //tag-trainer.raccoon.ag/site/sereia
             text-transform: none;
         }
         
@@ -895,9 +894,6 @@
             background: transparent;
         }
         
-        body {
-            webkit-tap-highlight-color: #fed136;
-        }
         
         #call-me-baby {
             position: fixed;
@@ -2526,6 +2522,20 @@ Profissionais com uma expertise sem par no mercado sustentam nosso serviço supe
             element.style.right = '20px';
         }, Math.random() * 12000 + 5000);
     </script>
+
+    <!-- Hard-coded tags -->
+    <script>
+        //Scroll bottom page
+        window.addEventListener("scroll", function(){
+            if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+            window.tracker.send("event",{
+              Category: "user-interaction",
+              Action: "scroll",
+              Label: "bottom"  
+            });}
+        });
+    </script>
+
 
 </body>
 
