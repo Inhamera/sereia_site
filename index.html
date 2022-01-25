@@ -2544,7 +2544,7 @@ Profissionais com uma expertise sem par no mercado sustentam nosso serviço supe
 
     <!-- Hard-coded tags -->
     <script>
-        //Scroll bottom page
+        // Scrolls
         window.addEventListener("scroll", function(){
             if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight){
             window.tracker.send("event",{
@@ -2568,10 +2568,19 @@ Profissionais com uma expertise sem par no mercado sustentam nosso serviço supe
                     action: "scroll",
                     label: "forms"}
                     );
-                console.log("Disparou.");
             };
             }
         );
+    </script>
+    
+    <script>
+        // Social Media Interaction
+        var social =  document.querySelectorAll(".list-inline.social-buttons a")
+        for (var i = 0; i <= social.length; i++){
+            social[i].addEventListener("hover", function(){
+
+            })
+        }
     </script>
 
 
